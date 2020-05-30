@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+import sys
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
@@ -27,7 +28,7 @@ MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-if sys.platform.startwith('linux'):
+if sys.platform.startswith('linux'):
     DEBUG = bool(int(os.getenv('DEBUG')))
 else:
     DEBUG = True

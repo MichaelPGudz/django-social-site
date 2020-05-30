@@ -33,7 +33,7 @@ if sys.platform.startswith('linux'):
 else:
     DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['MichaelP.pythonanywhere.com']
 
 
 # Application definition

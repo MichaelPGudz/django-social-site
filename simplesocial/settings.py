@@ -33,7 +33,7 @@ if sys.platform.startswith('linux'):
 else:
     DEBUG = True
 
-ALLOWED_HOSTS = ['MichaelP.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -137,8 +137,6 @@ STATICFILES_DIRS = [
 #MEDIA
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
-
-LOGIN_URL = '/basic_app/user_login'
 
 LOGIN_REDIRECT_URL = 'test'
 LOGOUT_REDIRECT_URL = 'thanks'
